@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Spline+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <span>
+        <form id="search-form">
+          <img class="glass" src="Images/glass.png" />
+          <input
+            class="input"
+            id="city-input"
+            type="text"
+            placeholder="Enter a city..."
+            autocomplete="off"
+          />
+          <input
+            type="submit"
+            value="Search"
+            id="searchButton"
+            class="searchButton"
+          />
+          <button class="current-location-button" id="current-location-button">
+            Current
+          </button>
+        </form>
+      </span>
+      <div class="city-name" id="city">
+        <img
+          class="compass"
+          src="Images/compass-compass.png"
+          style="width: 50px; height: 50px"
+        />
+      </div>
+      <div class="date" id="date"></div>
+      <div class="temperatureAll">
+        <span class="temperature" id="temperature"></span
+        ><span class="largeMeasure" id="largeMeasure"></span>
+        <img class="snow" src="Images/snow-wind.png" />
+      </div>
+      <span class="celsius-fahrenheit">
+        <span class="celsius" id="celsius-link">°C</span>
+        /
+        <span class="fahrenheit" id="fahrenheit-link">°F</span>
+      </span>
+      <br />
+      <div class="weather-description" id="description">Deep Freeze</div>
+      <div class="humidity">Humidity: <span id="humidity">30</span>%</div>
+      <div class="wind">Wind: <span id="wind">50</span>km/h</div>
+      <div class="third row">
+        <div class="mondayImage col-3">
+          <img
+            class="smallImages"
+            src="Images/snow-cloud.png"
+            style="width: 50px; height: 50px"
+          />
+        </div>
+        <div class="tuesdayImage col">
+          <img
+            class="smallImages"
+            src="Images/storm-cloud.png"
+            style="width: 50px; height: 50px"
+          />
+        </div>
+        <div class="wednesdayImage col">
+          <img
+            class="smallImages"
+            src="Images/wind-wind.png"
+            style="width: 50px; height: 50px"
+          />
+        </div>
+        <div class="thursdayImage col">
+          <img
+            class="smallImages"
+            src="Images/sun-cloud.png"
+            style="width: 50px; height: 50px"
+          />
+        </div>
+        <div class="fridayImage col-3">
+          <img
+            class="smallImages"
+            src="Images/cloud-cloud.png"
+            style="width: 50px; height: 50px"
+          />
+        </div>
+      </div>
+      <div class="forth row">
+        <div class="mondayTemp col-3">-20°C</div>
+        <div class="tuesdayTemp col">-15°C</div>
+        <div class="wednesdayTemp col">-2°C</div>
+        <div class="thursdayTemp col">-20°C</div>
+        <div class="fridayTemp col-3">-15°C</div>
+      </div>
+      <div class="fifth row">
+        <div class="monday col-3">Monday</div>
+        <div class="tuesday col">Tuesday</div>
+        <div class="wednesday col">Wednesday</div>
+        <div class="thursday col">Thursday</div>
+        <div class="friday col-3">Friday</div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

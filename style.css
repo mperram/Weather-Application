@@ -1,0 +1,131 @@
+body {
+  padding: 100px;
+  background-image: url("Images/mountains.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+div {
+  font-family: "Spline Sans", sans-serif;
+  text-align: center;
+}
+form {
+  text-align: center;
+}
+.input {
+  border-radius: 100px;
+  border: 1px #959cab solid;
+  padding: 10px 100px 10px 20px;
+}
+input::placeholder {
+  text-align: left;
+}
+#searchButton {
+  border-radius: 100px;
+  border: 1px #87c8f8 solid;
+  padding: 5px 15px 5px 15px;
+  background-color: #87c8f8;
+  margin-top: 8px;
+  margin-left: 20px;
+  color: #5a6275;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+}
+#searchButton:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transform: scale(1.1);
+  border: 1px rgb(118, 221, 255) solid;
+  background-color: rgb(118, 221, 255);
+}
+
+#current-location-button {
+  border-radius: 100px;
+  border: 1px #5688a6 solid;
+  padding: 5px 15px 5px 15px;
+  background-color: #5688a6;
+  margin-top: 8px;
+  margin-left: 20px;
+  color: #cfdbdb;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+}
+
+#current-location-button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transform: scale(1.1);
+  border: 1px rgb(118, 221, 255) solid;
+  background-color: rgb(118, 221, 255);
+  color: #5a6275;
+}
+.glass {
+  width: 30px;
+  height: 30px;
+}
+.snow {
+  width: 100px;
+  height: 100px;
+}
+.celsius-fahrenheit {
+  color: #5a6275;
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+.celsius:hover,
+.fahrenheit:hover {
+  color: rgb(118, 221, 255);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.city-name {
+  color: #5a6275;
+  font-size: 50px;
+}
+.date,
+.weather-description {
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #26477a;
+}
+.temperatureAll {
+  color: #5a6275;
+  font-size: 75px;
+  font-weight: thin;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.humidity,
+.wind {
+  color: #5a6275;
+  font-size: 17px;
+  font-weight: bold;
+}
+.third {
+  padding-top: 120px;
+}
+
+.forth {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.mondayTemp,
+.tuesdayTemp,
+.wednesdayTemp,
+.thursdayTemp,
+.fridayTemp {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #26477a;
+}
+.monday,
+.tuesday,
+.wednesday,
+.thursday,
+.friday {
+  font-size: 15px;
+  font-weight: bold;
+  color: #26477a;
+}
