@@ -129,3 +129,20 @@ input::placeholder {
   font-weight: bold;
   color: #26477a;
 }
+.openSource {
+  padding-top: 50px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #26477a;
+  text-align: right;
+}
+.openSourceLink {
+  text-decoration: none;
+  color: #26477a;
+  font-weight: bolder;
+}
+.openSourceLink:hover {
+  color: rgb(118, 221, 255);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
