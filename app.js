@@ -17,26 +17,8 @@ function formatDate(timestamp) {
     "Friday",
     "Saturday",
   ];
-  let calender = date.getDate();
-  let year = date.getFullYear();
   let day = days[date.getDay()];
-  let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  let month = months[date.getMonth()];
-
-  return `🗓 ${day} ${month} ${calender}, ${year} ⏰ ${hours}:${minutes}`;
+  return `🗓 ${day} ⏰ ${hours}:${minutes}`;
 }
 
 function displayWeatherCondition(response) {
