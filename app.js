@@ -22,18 +22,26 @@ function formatDate(timestamp) {
 }
 
 function displayWeatherCondition(response) {
-  document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
+  let temperatureElement = document.querySelector("#temperature");
+  let cityElement = document.querySelector("#city");
+  let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
+
+  celsiusTemperature = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  cityElement.innerHTML = response.data.name;
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/01d@2x.png`
   );
-  document.querySelector("#largeMeasure").innerHTML = `°C`;
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
-  );
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
-  dateElement.innerHTML = formatDate(response.data.dt + 1000);
 }
 
 function searchCity(city) {
@@ -78,10 +86,6 @@ function convertToCelsius(event) {
   document.querySelector("#largeMeasure").innerHTML = `°C`;
 }
 
-let dateElement = document.querySelector("#date");
-let currentTime = new Date();
-dateElement.innerHTML = formatDate(currentTime);
-
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
@@ -93,5 +97,3 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
-
-searchCity("");
