@@ -77,8 +77,7 @@ input::placeholder {
   font-weight: bolder;
   letter-spacing: 1px;
 }
-.celsius:hover,
-.fahrenheit:hover {
+.celsius-fahrenheit .active {
   color: rgb(118, 221, 255);
   cursor: pointer;
   transition: all 200ms ease-in-out;
