@@ -71,10 +71,11 @@ input::placeholder {
   height: 100px;
 }
 .celsius-fahrenheit {
+  vertical-align: super;
   color: #5a6275;
   font-size: 20px;
   font-weight: bolder;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
 }
 .celsius:hover,
 .fahrenheit:hover {
