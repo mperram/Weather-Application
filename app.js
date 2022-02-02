@@ -79,10 +79,7 @@ function convertToFahrenheit(event) {
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  let temperature = temperatureElement.innerHTML;
-  temperature = Number(temperature);
-  temperatureElement.innerHTML = Math.round(temperature);
-  document.querySelector("#largeMeasure").innerHTML = `°C`;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 let searchForm = document.querySelector("#search-form");
