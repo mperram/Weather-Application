@@ -70,6 +70,7 @@ input::placeholder {
   width: 100px;
   height: 100px;
 }
+
 .celsius-fahrenheit {
   vertical-align: super;
   color: #5a6275;

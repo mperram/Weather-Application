@@ -31,7 +31,6 @@ function displayWeatherCondition(response) {
   let iconElement = document.querySelector(".icon");
 
   celsiusTemperature = response.data.main.temp;
-
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -43,6 +42,7 @@ function displayWeatherCondition(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  document.getElementById("celsius-fahrenheit").hidden = false;
 }
 
 function searchCity(city) {
