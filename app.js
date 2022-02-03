@@ -43,6 +43,8 @@ function displayWeatherCondition(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   document.getElementById("celsius-fahrenheit").hidden = false;
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
 }
 
 function searchCity(city) {
