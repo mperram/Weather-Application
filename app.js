@@ -21,6 +21,34 @@ function formatDate(timestamp) {
   return `🗓 ${day} ⏰ ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+  let forecastHTML = `<div class="third row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+          <div class="mondayImage col-2">
+            <img
+              class="smallImages"
+              src="Images/snow-cloud.png"
+              style="width: 50px; height: 50px"
+            />
+          
+        
+        <div class="forth row">
+          <div class="mondayTemp">-20°C</div>
+        </div>
+        <div class="fifth row">
+          <div class="monday">${day}</div></div></div>
+        `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayWeatherCondition(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -101,3 +129,5 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
+
+displayForecast();
