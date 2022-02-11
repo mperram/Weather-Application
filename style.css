@@ -115,7 +115,7 @@ input::placeholder {
   font-weight: bold;
 }
 .third {
-  padding-top: 120px;
+  padding-top: 100px;
 }
 
 .forth {
@@ -128,17 +128,21 @@ input::placeholder {
   color: #26477a;
 }
 .monday {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
-  color: #26477a;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #5a6275;
 }
-.openSource {
-  padding-top: 50px;
+.openSourceFirst {
+  padding-top: 500px;
   font-size: 12px;
   font-weight: bold;
   color: #26477a;
   text-align: right;
 }
+
 .openSourceLink {
   text-decoration: none;
   color: #26477a;
