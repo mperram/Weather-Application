@@ -122,20 +122,12 @@ input::placeholder {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.mondayTemp,
-.tuesdayTemp,
-.wednesdayTemp,
-.thursdayTemp,
-.fridayTemp {
+.mondayTemp {
   font-size: 20px;
   font-weight: bolder;
   color: #26477a;
 }
-.monday,
-.tuesday,
-.wednesday,
-.thursday,
-.friday {
+.monday {
   font-size: 15px;
   font-weight: bold;
   color: #26477a;
