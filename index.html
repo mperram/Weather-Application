@@ -22,57 +22,61 @@
   </head>
   <body>
     <div class="container">
-      <span>
-        <form id="search-form">
-          <img class="glass" src="Images/glass.png" />
-          <input
-            class="input"
-            id="city-input"
-            type="text"
-            placeholder="Enter a city..."
-            autocomplete="off"
-          />
-          <input
-            type="submit"
-            value="Search"
-            id="searchButton"
-            class="searchButton"
-          />
-          <button class="current-location-button" id="current-location-button">
-            Current
-          </button>
-        </form>
-      </span>
-      <div class="city-name" id="city">
-        <img
-          class="compass"
-          src="Images/compass-compass.png"
-          style="width: 50px; height: 50px; opacity: 0"
-        />
-      </div>
-      <div class="date" id="date"></div>
-      <div class="temperatureAll">
-        <span class="temperature" id="temperature"></span>
-        <span class="celsius-fahrenheit" id="celsius-fahrenheit" hidden>
-          <span class="celsius" id="celsius-link">°C </span>
-          |
-          <span class="fahrenheit" id="fahrenheit-link">°F</span>
+      <div class="weather-app">
+        <span>
+          <form id="search-form">
+            <img class="glass" src="Images/glass.png" />
+            <input
+              class="input"
+              id="city-input"
+              type="text"
+              placeholder="Enter a city..."
+              autocomplete="off"
+            />
+            <input
+              type="submit"
+              value="Search"
+              id="searchButton"
+              class="searchButton"
+            />
+            <button
+              class="current-location-button"
+              id="current-location-button"
+            >
+              Current
+            </button>
+          </form>
         </span>
+        <div class="city-name" id="city">
+          <img
+            class="compass"
+            src="Images/compass-compass.png"
+            style="width: 50px; height: 50px; opacity: 0"
+          />
+        </div>
+        <div class="date" id="date"></div>
+        <div class="temperatureAll">
+          <span class="temperature" id="temperature"></span>
+          <span class="celsius-fahrenheit" id="celsius-fahrenheit" hidden>
+            <span class="celsius" id="celsius-link">°C </span>
+            |
+            <span class="fahrenheit" id="fahrenheit-link">°F</span>
+          </span>
 
-        <img
-          src=""
-          class="icon"
-          style="display: none"
-          onload="this.style.display=''"
-        />
+          <img
+            src=""
+            class="icon"
+            style="display: none"
+            onload="this.style.display=''"
+          />
+        </div>
+
+        <br />
+        <div class="weather-description" id="description"></div>
+        <div class="humidity" id="humidity"></div>
+        <div class="wind" id="wind"></div>
+        <div class="weather-forecast" id="weather-forecast"></div>
       </div>
-
-      <br />
-      <div class="weather-description" id="description"></div>
-      <div class="humidity" id="humidity"></div>
-      <div class="wind" id="wind"></div>
-      <div class="weather-forecast" id="weather-forecast"></div>
-
       <div class="sixth row">
         <div class="openSourceFirst col-12">
           <a

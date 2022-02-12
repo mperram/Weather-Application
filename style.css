@@ -136,7 +136,6 @@ input::placeholder {
   color: #5a6275;
 }
 .openSourceFirst {
-  padding-top: 500px;
   font-size: 12px;
   font-weight: bold;
   color: #26477a;
@@ -152,4 +151,7 @@ input::placeholder {
   color: rgb(118, 221, 255);
   cursor: pointer;
   transition: all 200ms ease-in-out;
+}
+.weather-app {
+  min-height: 655px;
 }
